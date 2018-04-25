@@ -13,6 +13,9 @@
           <li>
             <router-link to="/about">About</router-link>
           </li>
+          <li>
+            <router-link to="/userManagement">User Details</router-link>
+          </li>
         </ul>
       </div>
     </nav>
