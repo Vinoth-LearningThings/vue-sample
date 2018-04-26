@@ -16,6 +16,9 @@
           <li>
             <router-link to="/userManagement">User Details</router-link>
           </li>
+          <li>
+            <router-link to="/gridComponent">Sample Grid</router-link>
+          </li>
         </ul>
       </div>
     </nav>
