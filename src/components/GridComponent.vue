@@ -1,7 +1,7 @@
 <template>
   <div>
       <div v-if="rowClicked">
-        <h1>Selected row details</h1>
+        <h1 class="test">Selected row details</h1>
         <h3>Record Number: {{selectedUser.pageIndex + 1}}</h3>
         <h3>Name: {{selectedUser.row.name}}</h3>
       </div>
@@ -9,6 +9,7 @@
       title="Demo Table"
       :columns="columns"
       :rows="rows"
+      :rowStyleClass="getRowClass"
       :search-options="{
         enabled: true,
         placeholder: 'Search'
@@ -85,6 +86,13 @@ export default {
       this.rowClicked = true
       this.selectedUser = params
       console.log(this.selectedUser)
+    },
+
+    getRowClass (row) {
+      if (row.id) {
+        return 'user-record'
+      }
+      return ''
     }
   }
 }

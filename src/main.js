@@ -6,11 +6,13 @@ import router from './router'
 import VModal from 'vue-js-modal'
 import VueResource from 'vue-resource'
 import VueGoodTable from 'vue-good-table'
+import { Nav } from 'bootstrap-vue/es/components'
 
 Vue.config.productionTip = false
 Vue.use(VueResource)
 Vue.use(VModal)
 Vue.use(VueGoodTable)
+Vue.use(Nav)
 
 /* eslint-disable no-new */
 new Vue({
